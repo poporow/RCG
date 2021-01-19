@@ -247,6 +247,7 @@ private:
         }
         in_obj.close();
         out_obj.close();
+        cout<<"SAVED!";
     }
     void Construct_menu1(){
         create_dir();
@@ -433,6 +434,7 @@ void delete_record(const string& filename, short& lcount){
             for(const string& preSave: preserve_data){
                 overwrite << preSave << endl;
             }
+            overwrite.close();
             cout<<"Record Deleted Successfully!" <<endl;
         }
 }
