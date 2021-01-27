@@ -17,7 +17,7 @@ int IsExist(const char* path)
 
 int candidate_num=0;
 
-const char* pathfile = "Data/Primary_key.ridom";
+const char* pathfile = "Data/Primary_key.id";
 
 int fcan_num(){
 	if(IsExist(pathfile) == 0){

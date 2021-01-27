@@ -27,9 +27,9 @@ void clr_console(){
 #endif
 void Sleep_For(){
 	#ifdef _WIN32
-		Sleep(3 * 1000); // 3 is the no. of seconds to hold and 10^3 is the millisecond argument thaat Sleep takes
+		Sleep(2 * 1000); // 2 is the no. of seconds to hold and 10^3 is the millisecond argument thaat Sleep takes
 	#elif __linux__ || __unix__
-		usleep(3 * 1000000); // 3 is the no. of seconds to hold and 10^6 is the microsecond argument thaat usleep takes
+		usleep(2 * 1000000); // 2 is the no. of seconds to hold and 10^6 is the microsecond argument thaat usleep takes
 	#else
 		cerr<< "Error: Undefined OS";
 		exit(1);
